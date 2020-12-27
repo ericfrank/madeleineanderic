@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #000;
+  background-image: url('bg.jpg');
+  background-position: center;
+  background-size: cover;
+  font-family: 'Cormorant Infant', serif;
+  color: #fff;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1vh 5vh;
+  text-align: center;
+  animation: background ease 6s;
+  animation-fill-mode: forwards;
+}
+
+.serif-text {
+  font-style: italic;
+  font-size: 20vw;
+  line-height: 1;
+}
+
+.sans-text {
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+
+.delay {
+  animation: fadeIn ease 4s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.delay-1 {
+  animation-delay: 0;
+}
+
+.delay-2 {
+  animation-delay: 1s;
+}
+
+.delay-3 {
+  animation-delay: 2s;
+}
+
+.delay-4 {
+  animation-delay: 3s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes background {
+  0% { background-color: rgba(0, 0, 0, .0); }
+  100% { background-color: rgba(0, 0, 0, .6); }
+}
